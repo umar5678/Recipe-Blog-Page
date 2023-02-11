@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+
+:root {
+  --font-heading: "Playfair Display", serif;
+  --font-pri: "Montserrat", sans-serif;
+  --font-weight-7: 700;
+  --font-weight-5: 500;
+  --font-weight-4: 400;
+  --clr-grey: #333333;
+  --clr-black: #000000;
+}
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  width: min(94vw, 1000px);
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+.container h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
+  margin-top: 2rem;
+}
+.feature-img {
+  margin: 1.5rem 0;
+}
+
+.main-content {
+  max-width: 600px;
+  margin-top: 3rem;
+}
+
+.desc {
+  display: flex;
+}
+.desc p {
+  font-family: var(--font-pri);
+  font-weight: 500;
+  font-size: 14px;
+  color: #4f4f4f;
+  max-width: 592px;
+  margin: 0.8rem 0;
+}
+.desc img {
+  margin-right: 0.75rem;
+}
+.card-item {
+  display: flex;
+  align-items: center;
+}
+.card-item .icon {
+  font-size: 15px;
+  margin: 0.5rem;
+}
+.time-data p {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-family: var(--font-pri);
+  font-size: 8px;
+  font-weight: 700;
+}
+.time-data h4 {
+  font-size: 10px;
+  color: #333333;
+  font-weight: 500;
+  font-family: var(--font-pri);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+  color: #333333;
+  margin-top: 2rem;
+}
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: #333333;
+  font-size: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  margin: 1.5rem 0;
+}
+
+input {
+  margin-right: 1rem;
+  height: 21px;
+  width: 21px;
+}
+label {
+  font-family: var(--font-pri);
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  line-height: 25px;
+  margin: 0.2rem 0;
+}
+li {
+  display: flex;
+}
+
+li label {
+  flex: 1 1;
+}
+ul {
+  padding: 0;
+}
+
+article {
+  display: flex;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+article span {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  background: #f2994a;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 1rem 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 24px;
+}
+article p {
+  flex: 1 1;
+  font-weight: 400;
+  font-family: var(--font-pri);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-content a {
+  color: #bdbdbd;
+  font-weight: 400;
+  font-family: var(--font-pri);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+footer p {
+  text-align: center;
+  font-family: var(--font-pri);
+  font-size: 14px;
+  font-weight: 400;
+  color: #828282;
+}
+footer p a {
+  text-decoration: none;
+  color: #828282;
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    float: right;
+    width: 216px;
+    height: 367px;
+    background-color: #ffff;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  .card-item {
+    margin-top: 1.9rem;
+    margin-left: 3rem;
+  }
+  .card-item .icon {
+    font-size: 27px;
+    margin-right: 1rem;
+    color: #4f4f4f;
+  }
+  .card-item p {
+    font-size: 10px;
+  }
+  .card-item h4 {
+    font-size: 14px;
+  }
+  .card-item:hover .icon {
+    color: #f2994a;
+  }
+  .card-item:hover h4 {
+    color: #f2994a;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+}
